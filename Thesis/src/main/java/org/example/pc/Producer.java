@@ -16,7 +16,7 @@ public class Producer implements Runnable {
 
     @Override
     public void run() {
-        String inputFilePath = "C:\\Users\\ferid\\Downloads\\Thesis\\src\\main\\java\\org\\example\\evaluation_ids.csv";   // Path to the input file
+        String inputFilePath = "output-file";   // Path to the input file
         // Batch size defines how many lines to process in one batch
         int batchSize = 64000;
         int batchCounter = 0;
