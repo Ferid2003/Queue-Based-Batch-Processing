@@ -17,7 +17,7 @@ public class Consumer implements Runnable{
 
     @Override
     public void run() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\ferid\\Downloads\\Thesis\\src\\main\\java\\org\\example\\output.txt", true))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("input-file", true))) {
             while (true) {
                 StringBuilder batch = this.blockingQueue.take();
 
